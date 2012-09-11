@@ -1,0 +1,381 @@
+/*--------------------备注信息------------------*/
+/*colors:
+#f7f7f7 body背景色
+#5c5c5c 默认灰色字色
+#6889a5 蓝色字色
+#b2b2b2 淡灰提示字色
+#e9e9e9 好友动态图片边框颜色
+#dadada 动态分割线颜色
+#f0f0f0 评论背景
+*/
+
+/*-------------------全局样式-------------------*/
+body{
+	background-position:0 -187px;
+	background-color:#f7f7f7;
+	font-size:14px;
+	font-family:Tahoma, '宋体';
+	color:#5c5c5c;
+}
+
+a:link, a:visited, a:hover, a:active{ color:#5c5c5c; text-decoration:none; }
+
+/*------------------公用样式------------------*/
+
+.cf{ *zoom: 1; }
+.cf:before, .cf:after{ content:''; display:table; }
+.cf:after{ clear: both; }
+
+.fl, .main_menu li, .user img, .pictures_wrap a, .access_list li, .access_list li a, .access_list li img, .access_list li span, .introduction img, .birthday img{ 
+	float:left;
+}
+
+.fr{ float:right; }
+
+.logo a, .msg_num em, .user img, .name, .name_link, .edit, .left li a, .box_more, .box_more a, .box_manage, .box_manage a, .itemAvatar, .pictures_wrap span{
+	display:block; 
+}
+
+.msg_item a, .msg_num, .menu_focus, .divition, .search_button, .name_more, .diary, .album, .shuoshuo, .share, .vote, .farm, .note, .weibo, .music, .gift, .auth, .xiaoyou, .city, .box_more a, .trends_num, .add_photo, .add_media, .add_link, .manage_chat, .manage_delete, .add_friend a, .auth_user, .add_like a, .send_gift, .hot span{ 
+	background-image:url(../images/sprite1.png);
+	background-repeat:no-repeat;
+}
+
+.right, .comments_wrap ul, .left, .menu_box, .trends{
+	background-image:url(../images/sprite2.png);
+	background-repeat:no-repeat;
+}
+
+body, .search, .mood_poster, .comment_input_wrap, .access_title h3, .trends li a:hover, .trends_focus a{
+	background-image:url(../images/sprite3.png);
+	background-repeat:no-repeat;
+}
+
+body{ background-repeat:repeat-x; }
+
+.logo span, .weather span, .msg_item a, .name_more, .manage_chat, .manage_delete{ 
+	display:block;
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+.msg_num em, .menu_focus, h3{ font-weight:bold; }
+
+/*白色字*/
+.main_menu li a, .search input, .msg_num em, .user_info a, .trends_num{ 
+	color:#fff; 
+}
+
+/*蓝色字*/
+.box_manage a, .friend_trends_wrap a, .trends_more_link, .access_list a, .introduction a, .birthday a{
+	color:#6889a5; 
+}
+
+/*浅灰色字*/
+.mood_poster_text, .pictures_count, .time, .hot li{ color:#b2b2b2; }
+
+.search input, .mood_poster input, .comment_input_wrap input{ 
+	background-color:transparent;
+	border:none;
+	outline:none;
+}
+
+.box_control, .edit, .details, .method, .comments_wrap, .trends_more_link, .access_list, .introduction, .birthday, .hot li, .footer{
+	font-size:12px;
+}
+
+h3{ font-size:14px; line-height:29px; }
+
+/*-----------------各模块样式-------------------*/
+
+/*main*/
+
+.main{ margin:0 auto; width:974px; }
+
+/*main topbar*/
+
+.topbar{ padding-top:17px; height:39px; }
+
+.logo{ width:106px; height:34px; }
+
+.weather{ width:82px; height:100%; }
+
+.weather img{ position:absolute; padding-top:3px; }
+
+.msg{ padding-top:16px; } 
+
+.msg_item{ position:relative; padding-right:12px; }
+
+.item_friend{ width:15px; height:15px; background-position:-19px -47px; }
+
+.item_campus{ width:16px; height:17px; background-position:-165px -305px; }
+
+.item_weibo{ width:14px; height:17px; background-position:-58px -44px; }
+
+.msg_num{
+	position:absolute;
+	top:-5px;
+	right:5px;
+	width:12px;
+	height:11px;
+	background-position:-40px -46px;
+}
+
+.msg_num em{ 
+	width:12px;
+	height:11px;
+	font-size:7px; /*opera 最小字体需用户自己设置浏览器选项，默认不支持7px大小*/
+	text-align:center;
+	line-height:10px;
+	-webkit-text-size-adjust:none;
+}
+
+.main_menu{ height:100%; }
+
+.main_menu li{ padding:0 10px; height:39px; line-height:39px; }
+
+.menu_focus{ background-position:50% -354px; }
+
+li.divition{ margin-left:10px; padding:0 20px; background-position:-180px -349px; }
+
+.search{
+	padding:8px 5px 5px;
+	width:220px;
+	background-position:-1169px -7px;
+	background-color:transparent;
+}
+
+.search_input{ padding-left:5px; width:180px; height:18px; line-height:18px; }
+
+.search_button{
+	width:19px;
+	height:19px;
+	background-position:-101px -44px;
+	cursor:pointer;
+}
+
+/*main content right*/
+
+.right{
+	padding-top:5px;
+	width:801px;
+	background-position:0 -502px;
+	background-color:#fff;
+	border:1px solid #ededed;
+	border-top-right-radius:5px;
+}
+
+/*main content right center*/
+
+.center{ padding:0 21px; width:529px; line-height:24px; }
+
+.mood_poster{
+	padding:12px 5px;
+	width:519px;
+	height:36px;
+	background-position:0 11px;
+}
+
+.mood_poster_text{ width:440px; height:34px; line-height:34px; font-size:14px; }
+
+.add_photo, .add_media, .add_link{
+	width:25px;
+	height:34px;
+	cursor:pointer;
+}
+
+.add_photo{ background-position:-49px 0; }
+
+.add_media{	background-position:-86px 0; }
+
+.add_link{ background-position:-121px 0; }
+
+.trends_item{ margin-bottom:8px; padding-bottom:8px; border-bottom:1px dotted #dadada; }
+
+.item_avatar{ margin:7px 10px 0 0; }
+
+.trends_content{ width:423px; }
+
+.pictures_wrap a{ margin-right:11px; padding:3px; border:1px solid #e9e9e9; line-height:0; }
+
+.comments_wrap ul{ padding-top:9px; width:413px; background-position:-877px -496px; }
+
+.comments_wrap li{ margin:1px 0; padding:4px; background-color:#f0f0f0; }
+
+.comments_wrap li.first{ padding-top:0; }
+
+.comment_avatar{ overflow:hidden; width:30px; height:30px; }
+
+.comment{ margin-left:10px; width:365px; height:16px; line-height:16px; }
+
+.comment_input_wrap{
+	margin-top:-1px;
+	padding:4px;
+	width:405px;
+	height:28px;
+	line-height:28px;
+	background-position:4px -112px;
+	background-color:#f0f0f0;
+}
+
+.comment_input_wrap input{ padding:5px; width:395px; }
+
+.trends_more_link{
+	text-align:center;
+	background-color:#f0f0f0;
+	cursor:pointer;
+	margin:20px 0;
+	height:30px;
+	line-height:30px;
+}
+
+/*main content right right_bar*/
+
+.right_bar{ padding-right:19px; width:211px; }
+
+.introduction, .birthday, .hot{ padding-top:5px; border-top:1px dotted #dadada; }
+
+.access_title{ margin-top:11px; height:29px; line-height:29px;  border-bottom:1px solid #e9e9e9; }
+
+.access_title a, .access_title h3{ display:inline-block; text-align:center; }
+
+.access_title h3{ position:relative; top:1px; width:80px; background-position:-796px -114px; }
+
+.access_title a{ width:60px; }
+
+.access_list{ line-height:15px; }
+
+.access_list li{
+	overflow:hidden;
+	padding-bottom:10px;
+	width:105px;
+	height:30px;
+}
+
+.access_list li .time, .access_list li:hover .access_manage{ display:block; }
+
+.access_list li:hover .time{ display:none; }
+
+.access_list img{ margin-right:5px; }
+
+.access_manage{ display:none; }
+
+.access_list a{ max-width:60px; white-space:nowrap; }
+
+.manage_chat, .manage_delete{ width:17px; height:15px; }
+
+.manage_chat{ background-position:-22px -24px; }
+
+.manage_delete{ background-position:-22px -8px; }
+
+.introduction, .birthday{ line-height:20px; }
+
+.access ul, .introduction ul, .birthday ul{ padding:8px 0; }
+
+.introduction li, .birthday li{ height:80px; }
+
+.auth_user{ 
+	display:inline-block;
+	width:18px;
+	height:15px;
+	line-height:15px;
+	vertical-align:middle;
+	background-position:2px -331px;
+}
+
+.introduction img, .birthday img{ margin-right:10px; }
+
+.add_friend a, .add_like a, .send_gift{
+	padding-left:20px;
+	height:14px;
+	line-height:14px;
+}
+
+.add_friend a{ background-position:-164px 0; }
+
+.add_like a{ background-position:-164px -26px; }
+
+.send_gift{ background-position:-168px -244px; }
+
+.hot li{ height:20px; line-height:16px; }
+
+.hot span{ padding-left:20px; background-position:4px -276px; }
+
+
+/*main content left*/
+
+.left{
+	padding:9px 0;
+	width:170px;
+	background-position:-1627px -1px;
+	line-height:28px;
+}
+
+.user{ padding:0 10px 10px; }
+
+.user_info{ padding:6px 0 0 10px; }
+
+.name, .edit{ display:block; height:20px; line-height:20px; }
+
+.name_link, .name_more{ display:inline-block; height:20px; line-height:20px; }
+
+.name_more{ margin-left:2px; width:16px; background-position:-140px -42px; }
+
+.trends li, .menu_box li{ height:28px; line-height:28px; }
+
+.trends li a, .box_control{ padding:0 10px; }
+
+.menu_box li a{ padding-left:35px; }
+
+.menu_box, .trends{ padding:5px 0; background-position:-1351px -504px; }
+
+.trends_focus a, .trends li a:hover{ background-position:-775px 0; }
+
+.box_control{ height:16px; line-height:16px; }
+
+.trends_num{
+	display:inline-block;
+	margin-left:6px;
+	width:11px;
+	height:28px;
+	line-height:28px;
+	font-size:8px;
+	text-align:center;
+	background-position:0 -294px; 
+	-webkit-text-size-adjust:none;
+}
+
+.diary{ background-position:10px -68px; }
+
+.album{ background-position:10px -134px; }
+
+.shuoshuo{ background-position:-156px -168px; }
+
+.share{ background-position:-156px -132px; }
+
+.vote{ background-position:-156px -206px; }
+
+.farm{ background-position:-156px -66px; }
+
+.note{ background-position:-156px -98px; }
+
+.weibo{ background-position:10px -100px; }
+
+.music{ background-position:10px -168px; }
+
+.gift{ background-position:10px -202px;}
+
+.auth{ background-position:10px -324px; }
+
+.xiaoyou{ background-position:-156px -300px; }
+
+.city{ background-position:-156px -270px; }
+
+.box_more a{ padding-right:16px; background-position:24px -248px; }
+
+/*main footer*/
+
+.footer{ margin:20px 0; line-height:20px; text-align:center; }
+
+.footer, .footer a{ color:#999; }
+

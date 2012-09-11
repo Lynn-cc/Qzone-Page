@@ -1,0 +1,35 @@
+.msg_num{ background-position:-40px -45px; }
+
+em{ width:10px; height:9px; font-style:normal; }
+
+.main_menu li a:link, .main_menu li a:visited, .main_menu li a:hover, .main_menu li a:active, .user_info a:link, .user_info a:visited, .user_info a:hover, .user_info a:active{
+	color:#fff;
+}
+
+.box_manage a:link, .box_manage a:visited, .box_manage a:hover, .box_manage a:active, .friend_trends_wrap a:link, .friend_trends_wrap a:visited, .friend_trends_wrap a:hover, .friend_trends_wrap a:active, .access_list a:link, .access_list a:visited, .access_list a:hover, .access_list a:active, .introduction a:link, .introduction a:visited, .introduction a:hover, .introduction a:active, .birthday a:link, .birthday a:visited, .birthday a:hover, .birthday a:active{
+	color:#6889a5; 
+}
+
+.topbar{ overflow:hidden; }
+
+.weather img{ z-index:1000; }
+
+.menu_box li, .trends li, .menu_box li a, .trends li a, .trends_focus, .trends_focus a{
+	height:28px;
+}
+
+.trends_num{ display:inline; background-position:0 -293px; }
+
+.box_more{ width:40px; }
+
+.box_manage{ width:24px; }
+
+.comments_wrap li { float:left; }
+
+.access_title a, .access_title h3{ display:inline; width:80px; }
+
+.center{ background-color:#fff; }
+
+.footer a:link, .footer a:visited, .footer a:hover, .footer a:active{ 
+	color:#999; 
+}
